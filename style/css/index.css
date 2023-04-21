@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "PokemonSolid";
+    src: local(Pokemon), url(../fonts/Solid.ttf);
+}
+
+@font-face {
+    font-family: "PokemonHollow";
+    src: local(Pokemon), url(../fonts/Hollow.ttf);
+}
+
+*{
+    font-family: 'PokemonSolid';
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageH, .pageF{
+    font-family: 'PokemonHollow';
+    color: rgb(247, 247, 73);
+    background-color: red;
+}
+
+.pageH{
+    font-size: x-large;
+}
+
+.pageF{
+    font-size: small;
+}
+
+#listagem{
+    margin: 0.5rem;
+}
+
+.imgPokemons {
+    width: 3.5rem;
+    object-fit: fill;
+}
+
+.pokemon {
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#cardPokemon {    
+    width: 90%;
+    height: 90%;
+}
+
+#card {
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: solid 3px black;
+    text-transform: capitalize;
+}
+
+#pokeImg {
+    width: 90%;
+    height: 45%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 1px solid black;
+    /* parada de cor */
+}
+
+#pokeImg img{
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 60%;
+    height: 100%;
+    object-fit: fill;
+}
+
+#pokeInfos {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#infos {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+}
+
+#btn {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 70px;
+    height: 25px;
+}
